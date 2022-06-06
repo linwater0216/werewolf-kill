@@ -3,7 +3,7 @@ wolf::wolf()
 {
 	for (int i = 1; i <= 15; i++)
 	{
-		m[i] = 1;
+		m[i] = 1;//生存狀態
 	}
 	for (int i = 1; i <= 15; i++)
 	{
@@ -400,9 +400,7 @@ void wolf::brc()
 	OutNumberAndIdentity();//輸出編號及身分
 
 	cout << "遊戲將在5秒後開始" << endl;
-	//	Sleep(5000);
-	
-	day = 1;
+		Sleep(5000);
 	int wolfplayer = 2;
 	int tp[20] = { 0 };
 	do
